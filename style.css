@@ -1,0 +1,175 @@
+:root {
+  --light-shadow: #fff;
+  --dark-shadow: #a3b1c6;
+  --main-color: #e0e5ec;
+  --gray: #eaebf3;
+  --black: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: "Source Sans 3";
+  font-weight: 300;
+}
+
+main {
+  background-color: var(--main-color);
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: var(--main-color);
+}
+
+.circle-small {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--main-color);
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: var(--main-color);
+}
+
+.withShadow {
+  box-shadow: -9px 9px 16px var(--light-shadow), 9px 9px 16px var(--dark-shadow);
+}
+
+.header {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 50px 50px auto 50px 50px;
+  margin: 20px 0 0 0;
+}
+
+.icon {
+  height: 20px;
+}
+
+.profilePictureSection {
+  justify-self: center;
+  place-self: center;
+}
+
+.profileImage {
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border: 4px var(--main-color) solid;
+}
+
+.centerContentHorizontallyAndVertically {
+  display: grid;
+  place-items: center;
+}
+
+.centerHorizontallyInGrid {
+  justify-self: center;
+}
+
+.circleIcon {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.downIntoColumn {
+  place-self: end;
+}
+
+.withSomeMarginBottom {
+  margin-bottom: 50px;
+}
+
+.relative {
+  position: relative;
+}
+
+.circleWithgradient {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(red, purple);
+  position: absolute;
+}
+
+.withSomeMarginTop {
+  margin-top: 10px;
+}
+
+.userInfo {
+  width: 550px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.infoCounter {
+  font-weight: 400;
+}
+
+.infoCategory {
+  color: #757575;
+}
+
+.userInfoCategory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlights {
+  width: 550px;
+  margin: 30px auto 0;
+  display: flex;
+  gap: 20px;
+}
+
+.grid {
+  display: grid;
+}
+
+.history__Image {
+  height: 20px;
+  width: 20px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 20px;
+}
+
+.photos__photo {
+  height: 180px;
+  width: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
